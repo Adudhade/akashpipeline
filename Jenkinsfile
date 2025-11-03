@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Adudhade/akashpipeline.git'
+                git branch: 'main' 'https://github.com/Adudhade/akashpipeline.git'
             }
         }
         stage('Build Docker Image') {
